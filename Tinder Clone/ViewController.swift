@@ -24,6 +24,8 @@ class ViewController: UIViewController {
                 if user.isNew {
                     println("User signed up and logged in through Facebook!")
                     
+                    self.performSegueWithIdentifier("signUp", sender: self)
+                    
                 } else {
                     println("User logged in through Facebook!")
                 }
