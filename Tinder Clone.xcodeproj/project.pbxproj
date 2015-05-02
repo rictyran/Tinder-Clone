@@ -13,6 +13,7 @@
 		5AA540621AF28D120075ED47 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA540611AF28D120075ED47 /* TinderViewController.swift */; };
 		5AA540641AF2AC230075ED47 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AA540631AF2AC230075ED47 /* placeholder.jpg */; };
 		5AA540651AF3C75F0075ED47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD067581AA22EE300876FA3 /* CoreLocation.framework */; };
+		5AA540671AF562440075ED47 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA540661AF562440075ED47 /* ContactsTableViewController.swift */; };
 		5AAB2DB91AB618B4002B9E4F /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD0674C1AA22E7B00876FA3 /* ParseUI.framework */; };
 		5AAB2DBA1AB618B9002B9E4F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD0674B1AA22E7B00876FA3 /* ParseFacebookUtils.framework */; };
 		5AD067231AA2201E00876FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD067221AA2201E00876FA3 /* AppDelegate.swift */; };
@@ -52,6 +53,7 @@
 		5AA5405F1AF273930075ED47 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5AA540611AF28D120075ED47 /* TinderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TinderViewController.swift; sourceTree = "<group>"; };
 		5AA540631AF2AC230075ED47 /* placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = placeholder.jpg; sourceTree = "<group>"; };
+		5AA540661AF562440075ED47 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		5AD0671D1AA2201E00876FA3 /* Tinder Clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tinder Clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD067211AA2201E00876FA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AD067221AA2201E00876FA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				5AA5405F1AF273930075ED47 /* SignUpViewController.swift */,
 				5AD067241AA2201E00876FA3 /* ViewController.swift */,
 				5AD067261AA2201E00876FA3 /* Main.storyboard */,
+				5AA540661AF562440075ED47 /* ContactsTableViewController.swift */,
 				5AD067201AA2201E00876FA3 /* Supporting Files */,
 				5AA5405B1AF259A40075ED47 /* Tinder Clone-Bridging-Header.h */,
 			);
@@ -308,6 +311,7 @@
 			files = (
 				5AA540601AF273930075ED47 /* SignUpViewController.swift in Sources */,
 				5AD067251AA2201E00876FA3 /* ViewController.swift in Sources */,
+				5AA540671AF562440075ED47 /* ContactsTableViewController.swift in Sources */,
 				5AA540621AF28D120075ED47 /* TinderViewController.swift in Sources */,
 				5AD067231AA2201E00876FA3 /* AppDelegate.swift in Sources */,
 			);

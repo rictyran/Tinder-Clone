@@ -60,8 +60,11 @@ class SignUpViewController: UIViewController {
                 
                 user["gender"] = result["gender"]
                 user["name"] = result["name"]
-                
+                user["email"] = result["email"]
+
                 user.save()
+                
+                self.performSegueWithIdentifier("signedUp", sender: self)
                 
                 println(result)
                 

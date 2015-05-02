@@ -35,13 +35,29 @@ class TinderViewController: UIViewController {
                 query.limit = 10
                 query.findObjectsInBackgroundWithBlock({ (users, error) -> Void in
                     
+                    var accepted = [String]()
+                
+                    if PFUser.currentUser()["accepted"] != nil {
+                        
+                            accepted = PFUser.currentUser()["accepted"] as [String]
+                        
+                    }
+                    
+                    var rejected = [String]()
+                    
+                    if PFUser.currentUser()["rejected"] != nil {
+                        
+                        rejected = PFUser.currentUser()["rejected"] as [String]
+                    
+                    }
+                    
                     for user in users {
                         
                         var gender1 = user["gender"] as? NSString
                         var gender2 = PFUser.currentUser()["interestedIn"] as? NSString
                         
-                        if gender1 == gender2 && PFUser.currentUser().username != user.username {
-                            
+                        if gender1 == gender2 && PFUser.currentUser().username != user.username && !contains(accepted, user.username) && !contains(rejected, user.username) {
+
                             self.usernames.append(user.username)
                             self.userImages.append(user["image"] as NSData)
                             
@@ -87,19 +103,28 @@ class TinderViewController: UIViewController {
         
         label.transform = stretch
         
-        if label.center.x < 100 {
-            
-            println("Not Chosen")
-            
-        } else if label.center.x > self.view.bounds.width - 100 {
-            
-            println("Chosen")
-            
-        }
         
         if gesture.state == UIGestureRecognizerState.Ended {
             
-            self.currentUser++
+            if label.center.x < 100 {
+                
+                println("Not Chosen")
+                
+                PFUser.currentUser().addUniqueObject(self.usernames[self.currentUser], forKey: "rejected")
+                PFUser.currentUser().save()
+                
+                 self.currentUser++
+                
+            } else if label.center.x > self.view.bounds.width - 100 {
+                
+                println("Chosen")
+                
+                PFUser.currentUser().addUniqueObject(self.usernames[self.currentUser], forKey: "accepted")
+                PFUser.currentUser().save()
+                
+                 self.currentUser++
+                
+            }
             
             label.removeFromSuperview()
             

@@ -14,26 +14,28 @@ class ViewController: UIViewController {
     
     @IBAction func signIn(sender: AnyObject) {
         
-        var permissions = ["public_profile"]
+        var permissions = ["email","public_profile"]
         
-         self.signInCancelledLabel.alpha = 0
+        self.signInCancelledLabel.alpha = 0
         
-        PFFacebookUtils.logInWithPermissions(permissions, {
+        PFFacebookUtils.logInWithPermissions(permissions, block: {
             (user: PFUser!, error: NSError!) -> Void in
-            if let user = user {
-                if user.isNew {
-                    println("User signed up and logged in through Facebook!")
-                    
-                    self.performSegueWithIdentifier("signUp", sender: self)
-                    
-                } else {
-                    println("User logged in through Facebook!")
-                }
-            } else {
-                println("Uh oh. The user cancelled the Facebook login.")
+            if user == nil {
+                NSLog("Uh oh. The user cancelled the Facebook login.")
                 
                 self.signInCancelledLabel.alpha = 1
+                
+            } else if user.isNew {
+                NSLog("User signed up and logged in through Facebook!")
+                
+                self.performSegueWithIdentifier("signUp", sender: self)
+                
+            } else {
+                NSLog("User logged in through Facebook!")
+                
+                
             }
+            
         })
         
     }
@@ -55,6 +57,7 @@ class ViewController: UIViewController {
             
            println("User logged in")
             
+           PFUser.logOut()
             
         }
     
