@@ -10,8 +10,6 @@ import UIKit
 
 class SignUpViewController: UIViewController {
 
-    
-    
     @IBOutlet var genderSwitch: UISwitch!
     
     @IBOutlet var profilePic: UIImageView!
@@ -54,8 +52,6 @@ class SignUpViewController: UIViewController {
             
             self.profilePic.image = image
             
-            
-            
             user["image"] = data
             
             user.save()
@@ -73,10 +69,6 @@ class SignUpViewController: UIViewController {
             
         }
         
-        
-        
-        
-        
         // Do any additional setup after loading the view.
     }
 
@@ -85,7 +77,6 @@ class SignUpViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 

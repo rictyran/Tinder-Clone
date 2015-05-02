@@ -12,6 +12,7 @@
 		5AA540601AF273930075ED47 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA5405F1AF273930075ED47 /* SignUpViewController.swift */; };
 		5AA540621AF28D120075ED47 /* TinderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AA540611AF28D120075ED47 /* TinderViewController.swift */; };
 		5AA540641AF2AC230075ED47 /* placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5AA540631AF2AC230075ED47 /* placeholder.jpg */; };
+		5AA540651AF3C75F0075ED47 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD067581AA22EE300876FA3 /* CoreLocation.framework */; };
 		5AAB2DB91AB618B4002B9E4F /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD0674C1AA22E7B00876FA3 /* ParseUI.framework */; };
 		5AAB2DBA1AB618B9002B9E4F /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD0674B1AA22E7B00876FA3 /* ParseFacebookUtils.framework */; };
 		5AD067231AA2201E00876FA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD067221AA2201E00876FA3 /* AppDelegate.swift */; };
@@ -25,7 +26,6 @@
 		5AD067531AA22EC800876FA3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD067521AA22EC800876FA3 /* AudioToolbox.framework */; };
 		5AD067551AA22ED100876FA3 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD067541AA22ED100876FA3 /* CFNetwork.framework */; };
 		5AD067571AA22ED900876FA3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD067561AA22ED900876FA3 /* CoreGraphics.framework */; };
-		5AD067591AA22EE300876FA3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD067581AA22EE300876FA3 /* CoreLocation.framework */; };
 		5AD0675B1AA22EEC00876FA3 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD0675A1AA22EEC00876FA3 /* libz.dylib */; };
 		5AD0675D1AA22EF500876FA3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD0675C1AA22EF500876FA3 /* MobileCoreServices.framework */; };
 		5AD0675F1AA22EFC00876FA3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AD0675E1AA22EFC00876FA3 /* QuartzCore.framework */; };
@@ -96,9 +96,9 @@
 				5AAB2DBA1AB618B9002B9E4F /* ParseFacebookUtils.framework in Frameworks */,
 				5AD0675D1AA22EF500876FA3 /* MobileCoreServices.framework in Frameworks */,
 				5AD0675B1AA22EEC00876FA3 /* libz.dylib in Frameworks */,
-				5AD067591AA22EE300876FA3 /* CoreLocation.framework in Frameworks */,
 				5AAB2DB91AB618B4002B9E4F /* ParseUI.framework in Frameworks */,
 				5AD067571AA22ED900876FA3 /* CoreGraphics.framework in Frameworks */,
+				5AA540651AF3C75F0075ED47 /* CoreLocation.framework in Frameworks */,
 				5AD067551AA22ED100876FA3 /* CFNetwork.framework in Frameworks */,
 				5AD067531AA22EC800876FA3 /* AudioToolbox.framework in Frameworks */,
 				5AD0674D1AA22E7B00876FA3 /* Bolts.framework in Frameworks */,
